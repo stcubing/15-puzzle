@@ -15,7 +15,7 @@ i tried again the night after and it works so yay!! as usual i kept overthinking
 the shuffling mechanic that happens at the start of the game was pretty weird cos i first tried to shuffle a single-dimensional translation of the array that would later be converted back to a 2d array. that worked great, until i tried playtesting the game and realised shuffling this way led to 50% of the starting positions being unsolvable due to parity, like an even-degreed rubik's cube, where 2 of the final tiles would be swapped. unlike a rubik's cube though, the 2d nature of this game meant that these were completely impossible, meaning that i had to rethink the shuffling.
 
 ![screenshot of parity](parity.png)
-![screenshot of rubiks cube parity](cubeparity.jpg)
+<img src="cubeparity.jpg" alt="screenshot of rubiks cube parity" width="200"/>
 
 i ended up relying on randomising legal moves to shuffle the board, ensuring that whatever it ended up with would be solvable, and that ended up working good enough.
 
