@@ -4,7 +4,8 @@ the **15 puzzle** is a 4x4 sliding puzzle game where there are 15 tiles and one 
 
 im lowkey trash at the game so i took 182 moves to solve it lmao
 
-![screenshot of the game](img/win.png)
+![screenshot of the game](img/game.png)
+![screenshot of winning](img/win.png)
 
 ## coding process
 
