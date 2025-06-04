@@ -1,6 +1,6 @@
 import random
 
-empty = " ◻"
+empty = "  "
 board = [[" 1"," 2"," 3"," 4"],
          [" 5"," 6"," 7"," 8"],
          [" 9","10","11","12"],
@@ -105,24 +105,36 @@ if __name__=="__main__":
    shuffle()
    counter = 0
 
+   print("welcome to 15 puzzle")
+   inputType = int(input("> control using ULDR [1] or WASD [2]? "))
+   match inputType:
+      case 1:
+         keys = ["U","L","D","R"]
+         print(f"> controls set to {keys}")
+      case 2:
+         keys = ["W","A","S","D"]
+         print(f"> controls set to {keys}")
+      case _:
+         keys = ["U","L","D","R"]
+         print(f"> defaulting to {keys}")
+
    while not checkWin():
       printBoard()
       counter += 1
-      move = input(f"> [{counter}] make a move (U, D, L, R): ").upper()
+      move = input(f"> [{counter}] make a move {keys}: ").upper()
 
-      match move:
-         case "U":
-            up("player")
-         case "D":
-            down("player")
-         case "L":
-            left("player")
-         case "R":
-            right("player")
-         case "EXIT":
-            exit()
-         case _:
-            print("* not a valid move")
+      if move == keys[0]:
+         up("player")
+      elif move == keys[1]:
+         left("player")
+      elif move == keys[2]:
+         down("player")
+      elif move == keys[3]:
+         right("player")
+      elif move == "EXIT":
+         exit()
+      else:
+         print("* not a valid move")
 
       checkWin()
    

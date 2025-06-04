@@ -1,6 +1,6 @@
 # hey guys i coded a 15 puzzle
 
-the **15 puzzle** is a 4x4 sliding puzzle game where there are 15 tiles and one empty space. you slide tiles around on a jumbled board to put everything back in numerical order. in this version of the game you input characters denoting directions to play `(U -> up, D -> down, L -> left, R -> right)`
+the **15 puzzle** is a 4x4 sliding puzzle game where there are 15 tiles and one empty space. you slide tiles around on a jumbled board to put everything back in numerical order. in this version of the game you input characters denoting directions to play `(U -> up, L -> left, D -> down, R -> right)`
 
 im lowkey trash at the game so i took 182 moves to solve it lmao
 
@@ -8,7 +8,7 @@ im lowkey trash at the game so i took 182 moves to solve it lmao
 
 ## coding process
 
-idk one night i decided to start coding it after hearing it in a lecture and failed completely LOL
+idk one night i decided to start coding it after hearing it in a lecture and failed to do so completely LOL
 
 i tried again the night after and it works so yay!! as usual i kept overthinking stuff and that was super annoying but in the end everything was much simpler than i thought. 
 
@@ -18,4 +18,8 @@ the shuffling mechanic that happens at the start of the game was pretty weird co
 <img src="img/cubeparity.jpg" alt="screenshot of rubiks cube parity" height="200"/>
 
 i ended up relying on randomising legal moves to shuffle the board, ensuring that whatever it ended up with would be solvable, and that ended up working good enough.
+
+## changelog
+
+**5/6:** added a `WASD` option alongside the default `ULDR` because that feels a little more natural to play, and removed the ASCII square gap placeholder thingy (i think it looks better this way)
 
